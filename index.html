@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>الأدلة المعتمدة للعام الدراسي 1447هـ</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='page.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src='links.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .cairo-font {
+            font-family: "Cairo", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings: "slnt" 0;
+        }
+
+        @keyframes glow-pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8),
+                    0 0 10px rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        @keyframes glow-pulse-white {
+
+            0%,
+            100% {
+                box-shadow: 0 1px 20px rgba(255, 255, 255, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 1px 20px rgba(255, 255, 255, 0.5),
+                    0 0 5px rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        .super-button {
+            animation: glow-pulse 3s ease-in-out infinite;
+        }
+
+        .content-container {
+            animation: glow-pulse 3s ease-in-out infinite;
+        }
+
+        .link-card {
+            animation: glow-pulse-white 3s ease-in-out infinite;
+        }
+
+        .link-card:hover {
+            animation: none;
+        }
+    </style>
+
+    <div class="cairo-font px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-row justify-center ">
+            <div class="super-button bg-gradient-to-tr from-slate-800 to-slate-700 tilt-3d
+                flex flex-row justify-center mt-8 sm:mt-12 lg:mt-16 
+                !border-t-white !border-t-4 sm:!border-t-8 border-gray-700 border 
+                w-full sm:w-[80vw] md:w-[70vw] lg:w-[50vw] xl:w-[40vw] 
+                rounded-2xl p-4 sm:p-6">
+                <div class="flex flex-col gap-3 sm:gap-5 px-2 sm:px-5 items-center">
+                    <p class="text-3xl sm:text-5xl lg:text-7xl font-bold text-center">
+                        البوابة الرقمية
+                    </p>
+                    <p class="text-lg sm:text-2xl lg:text-3xl text-center">
+                        مقدم خدمات دعم التميز المدرسي
+                    </p>
+                    <p class="text-base sm:text-xl lg:text-2xl text-center">
+                        أ.منى غالي الصاعدي
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center mt-10 sm:mt-16 lg:mt-20 mb-8 sm:mb-12">
+            <div class="content-container bg-gradient-to-tr from-slate-800 to-slate-700
+                w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] 
+                p-4 sm:p-5 rounded-xl border-t-8 border-t-white border border-gray-700">
+                <p class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b p-4 sm:p-6">
+                    <span>
+                        الأدلة المعتمدة للعام الدراسي 1447هـ
+                    </span>
+                </p>
+
+                <div id="links-container"
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 mt-4 sm:mt-6 ">
+                    <!-- Links will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample links data - replace with your actual links.js data
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const linkContainer = document.getElementById("links-container");
+            links.forEach((item) => {
+                const linkElement = document.createElement('a');
+                linkElement.href = item.link;
+                linkElement.target = "_blank";
+                linkElement.innerHTML = `
+                    <div class="link-card border border-white text-base sm:text-xl lg:text-2xl text-center 
+                        p-3 sm:p-4 rounded-lg items-center
+                        duration-300 hover:bg-white hover:text-black cursor-pointer
+                        transition-all flex flex-row gap-6 justify-between">
+                        ${item.icon}
+                        ${item.name}
+                    </div>
+                `;
+                linkContainer.appendChild(linkElement);
+            });
+
+            document.querySelectorAll('.tilt-3d').forEach(card => {
+                let strength = 8; // Tilt intensity (lower = more subtle)
+
+                const handleMouseMove = (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const centerX = rect.left + rect.width / 2;
+                    const centerY = rect.top + rect.height / 2;
+
+                    const mouseX = e.clientX - centerX;
+                    const mouseY = e.clientY - centerY;
+
+                    const rotateY = (mouseX / rect.width) * strength;
+                    const rotateX = -(mouseY / rect.height) * strength;
+
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+                };
+
+                const handleMouseLeave = () => {
+                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+                };
+
+                card.addEventListener('mousemove', handleMouseMove);
+                card.addEventListener('mouseleave', handleMouseLeave);
+            });
+        });
+    </script>
+</body>
+
+</html>
