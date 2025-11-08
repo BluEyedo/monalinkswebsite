@@ -1,4 +1,133 @@
-const links = [
+const links1 = [
+    {
+        id: 1,
+        name: "وزارة التعليم",
+        link: "https://www.moe.gov.sa/ar/Pages/default.aspx",
+        icon: '<i class="bi bi-building"></i>' // مؤسسة حكومية
+    },
+    {
+        id: 2,
+        name: "نظام فارس",
+        link: "https://sshr.moe.gov.sa/OA_HTML/AppsLocalLogin.jsp",
+        icon: '<i class="bi bi-diagram-3"></i>' // هيكل إداري / موارد بشرية
+    },
+    {
+        id: 3,
+        name: "نظام نور",
+        link: "https://noor.moe.gov.sa/Noor/EduWaveLanding/Home.aspx",
+        icon: '<i class="bi bi-brightness-high"></i>' // نظام تعليمي / طلاب
+    },
+    {
+        id: 4,
+        name: "نظام أعمالي",
+        link: "https://www.moe.gov.sa/aamali/Pages/default.aspx",
+        icon: '<i class="bi bi-briefcase"></i>' // مهام العمل
+    },
+    {
+        id: 5,
+        name: "نظام خدماتي",
+        link: "https://khadamati.moe.gov.sa/sp",
+        icon: '<i class="bi bi-gear"></i>' // خدمات
+    },
+    {
+        id: 6,
+        name: "نظام تواصل",
+        link: "https://tawasul.moe.gov.sa/",
+        icon: '<i class="bi bi-chat-dots"></i>' // تواصل / مراسلات
+    },
+    {
+        id: 7,
+        name: "منصة مدرستي",
+        link: "https://schools.madrasati.sa/",
+        icon: '<i class="bi bi-laptop"></i>' // منصة تعليمية
+    },
+    {
+        id: 8,
+        name: "نظام نتائجي",
+        link: "https://nataeji.moe.gov.sa/auth/signin",
+        icon: '<i class="bi bi-bar-chart"></i>' // نتائج / إحصاءات
+    },
+    {
+        id: 9,
+        name: "نظام الدعم الموحد",
+        link: "https://usc.moe.gov.sa/moe_csm",
+        icon: '<i class="bi bi-life-preserver"></i>' // دعم فني
+    },
+    {
+        id: 10,
+        name: "البريد الإلكتروني الوزاري",
+        link: "https://login.microsoftonline.com/",
+        icon: '<i class="bi bi-envelope-at"></i>' // بريد إلكتروني
+    }
+];
+
+
+const links2 = [
+    {
+        id: 1,
+        name: "معهد الإدارة العامة",
+        link: "https://www.ipa.edu.sa/ar",
+        icon: '<i class="bi bi-bank"></i>' // مؤسسة تدريبية حكومية
+    },
+    {
+        id: 2,
+        name: "منصة إثرائي",
+        link: "https://ethrai.sa/login",
+        icon: '<i class="bi bi-award"></i>' // تدريب وتطوير
+    },
+    {
+        id: 3,
+        name: "منصة مسار",
+        link: "https://masar.sa/",
+        icon: '<i class="bi bi-diagram-3"></i>' // مسارات وظيفية
+    },
+    {
+        id: 4,
+        name: "منصة العمل التطوعي",
+        link: "https://nvg.gov.sa/",
+        icon: '<i class="bi bi-people-heart"></i>' // تطوع
+    },
+    {
+        id: 5,
+        name: "منصة جدارات",
+        link: "https://jadarat.sa/",
+        icon: '<i class="bi bi-stars"></i>' // كفاءات / مهارات
+    },
+    {
+        id: 6,
+        name: "منصة دروب",
+        link: "https://doroob.sa/ar/",
+        icon: '<i class="bi bi-book"></i>' // تعلم / كورسات
+    },
+    {
+        id: 7,
+        name: "بوابة طاقات",
+        link: "https://www.taqat.sa/web/guest",
+        icon: '<i class="bi bi-briefcase"></i>' // توظيف / فرص عمل
+    },
+    {
+        id: 8,
+        name: "برنامج تمهير",
+        link: "https://eservices.taqat.sa/Eservices/Login.aspx",
+        icon: '<i class="bi bi-person-workspace"></i>' // تدريب على رأس العمل
+    },
+    {
+        id: 9,
+        name: "منصة منار",
+        link: "https://mnar.sa/",
+        icon: '<i class="bi bi-lightbulb"></i>' // تدريب وتنمية ذاتية
+    },
+    {
+        id: 10,
+        name: "منصة التطوير المهني",
+        link: "https://niepd.futurex.sa/",
+        icon: '<i class="bi bi-mortarboard"></i>' // تطوير مهني / تعليم مستمر
+    }
+];
+
+
+
+const links3 = [
     {
         id: 1,
         name: "النموذج الإشرافي في ضوء تمكين المدرسة العامة",
