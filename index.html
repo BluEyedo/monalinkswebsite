@@ -140,7 +140,7 @@
                 </p>
 
                 <div id="links-container-1"
-                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 mt-4 sm:mt-6 ">
+                    class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-12 mt-4 sm:mt-6">
                     <!-- Links will be inserted here -->
                 </div>
             </div>
@@ -178,9 +178,8 @@
     </div>
 
     <script>
+
         // Sample links data - replace with your actual links.js data
-
-
         document.addEventListener("DOMContentLoaded", () => {
             const linkContainer1 = document.getElementById("links-container-1");
             links1.forEach((item) => {
@@ -188,10 +187,10 @@
                 linkElement.href = item.link;
                 linkElement.target = "_blank";
                 linkElement.innerHTML = `
-                    <div class="link-card-orange border border-orange-500 text-base sm:text-xl lg:text-2xl text-center 
+                    <div class="link-card-orange border border-orange-500 text-base text-xs sm:text-xl lg:text-2xl text-center 
                         p-3 sm:p-4 rounded-lg items-center
                         duration-300 hover:bg-orange-500 hover:text-black cursor-pointer
-                        transition-all flex flex-row gap-6 justify-between">
+                        transition-all flex flex-row gap-6 justify-between ">
                         ${item.icon}
                         ${item.name}
                     </div>
