@@ -158,7 +158,7 @@
                     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 mt-4 sm:mt-6 ">
             
                 </div>
-            </div>
+            </div> -->
 
             <div class="content-container bg-gradient-to-tr from-slate-800 to-slate-700
                 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] 
@@ -171,9 +171,9 @@
 
                 <div id="links-container-3"
                     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 mt-4 sm:mt-6 ">
-            
+
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 
@@ -198,23 +198,23 @@
                 linkContainer1.appendChild(linkElement);
             });
 
-            const linkContainer2 = document.getElementById("links-container-2");
-            links2.forEach((item) => {
-                const linkElement = document.createElement('a');
-                linkElement.href = item.link;
-                linkElement.target = "_blank";
-                linkElement.innerHTML = `
-                    <div class="link-card-blue border border-blue-500 text-base sm:text-xl lg:text-2xl text-center 
-                        p-3 sm:p-4 rounded-lg items-center
-                        duration-300 hover:bg-blue-500 hover:text-black cursor-pointer
-                        transition-all flex flex-row gap-6 justify-between">
-                        ${item.icon}
-                        ${item.name}
-                    </div>
-                `;
-                linkContainer2.appendChild(linkElement);
-            });
-
+            // const linkContainer2 = document.getElementById("links-container-2");
+            // links2.forEach((item) => {
+            //     const linkElement = document.createElement('a');
+            //     linkElement.href = item.link;
+            //     linkElement.target = "_blank";
+            //     linkElement.innerHTML = `
+            //         <div class="link-card-blue border border-blue-500 text-base sm:text-xl lg:text-2xl text-center 
+            //             p-3 sm:p-4 rounded-lg items-center
+            //             duration-300 hover:bg-blue-500 hover:text-black cursor-pointer
+            //             transition-all flex flex-row gap-6 justify-between">
+            //             ${item.icon}
+            //             ${item.name}
+            //         </div>
+            //     `;
+            //     linkContainer2.appendChild(linkElement);
+            // });
+            console.log(links3)
             const linkContainer3 = document.getElementById("links-container-3");
             links3.forEach((item) => {
                 const linkElement = document.createElement('a');
