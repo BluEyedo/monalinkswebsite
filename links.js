@@ -122,6 +122,24 @@ const links2 = [
         name: "منصة التطوير المهني",
         link: "https://niepd.futurex.sa/",
         icon: '<i class="bi bi-mortarboard"></i>' // تطوير مهني / تعليم مستمر
+    },
+    {
+        id: 11,
+        name: "منصة إدراك ",
+        link: "https://www.edraak.org/",
+        icon: '<i class="bi bi-mortarboard"></i>' // تطوير مهني / تعليم مستمر
+    },
+    {
+        id: 12,
+        name: "عين المبدع",
+        link: "https://www.ienmtr.com/ar",
+        icon: '<i class="bi bi-mortarboard"></i>' // تطوير مهني / تعليم مستمر
+    },
+    {
+        id: 13,
+        name: "بوابة المعرفة",
+        link: "https://sdl.edu.sa/SDLPortal/Publishers.aspx",
+        icon: '<i class="bi bi-mortarboard"></i>' // تطوير مهني / تعليم مستمر
     }
 ];
 
