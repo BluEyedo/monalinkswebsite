@@ -145,7 +145,8 @@
                 </div>
             </div>
 
-            <!-- <div class="content-container bg-gradient-to-tr from-slate-800 to-slate-700
+            <!-- 
+                <div class="content-container bg-gradient-to-tr from-slate-800 to-slate-700
                 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] 
                 p-4 sm:p-5 rounded-xl border-t-8 border-t-blue-500 border border-gray-700 ">
                 <p class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b border-b-blue-400 p-4 sm:p-6">
@@ -158,7 +159,8 @@
                     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-12 mt-4 sm:mt-6 ">
             
                 </div>
-            </div> -->
+            </div> 
+            -->
 
             <div class="content-container bg-gradient-to-tr from-slate-800 to-slate-700
                 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] 
@@ -214,14 +216,14 @@
             //     `;
             //     linkContainer2.appendChild(linkElement);
             // });
-            console.log(links3)
+
             const linkContainer3 = document.getElementById("links-container-3");
             links3.forEach((item) => {
                 const linkElement = document.createElement('a');
                 linkElement.href = item.link;
                 linkElement.target = "_blank";
                 linkElement.innerHTML = `
-                    <div class="link-card border border-white text-base sm:text-xl lg:text-2xl text-center 
+                    <div class="link-card border border-white text-base text-xs sm:text-xl lg:text-2xl text-center 
                         p-3 sm:p-4 rounded-lg items-center
                         duration-300 hover:bg-white hover:text-black cursor-pointer
                         transition-all flex flex-row gap-6 justify-between">
