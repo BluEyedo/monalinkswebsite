@@ -85,7 +85,7 @@ const links2 = [
         id: 4,
         name: "منصة العمل التطوعي",
         link: "https://nvg.gov.sa/",
-        icon: '<i class="bi bi-people-heart"></i>' // تطوع
+        icon: '<i class="bi bi-heart"></i>' // تطوع
     },
     {
         id: 5,
