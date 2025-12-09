@@ -344,3 +344,44 @@ const links3 = [
     icon: '<i class="bi bi-calendar-week"></i>',
   },
 ];
+
+
+
+const links4 = [
+  {
+    id: 1,
+    name: "كتب المعلم للمرحلة الابتدائية",
+    link: "https://drive.google.com/drive/folders/1Dp0NBAQNQtMUzafCuXfmHabxMsJEgsus",
+    icon: '<i class="bi bi-book-half"></i>'   // books for teachers
+  },
+  {
+    id: 2,
+    name: "كتب المعلم للمرحلة المتوسطة",
+    link: "https://drive.google.com/drive/folders/10CpYPlHhdm9S9hxmNtQgonoX3F0YgsD9",
+    icon: '<i class="bi bi-journal-text"></i>'  // curriculum/books
+  },
+  {
+    id: 3,
+    name: "كتب المعلم للمرحلة الثانوية",
+    link: "https://drive.google.com/drive/folders/18ijgQl6c86X3dqJXdhGu5i-bHjNaWfG2",
+    icon: '<i class="bi bi-journal-richtext"></i>' // more advanced books
+  },
+  {
+    id: 4,
+    name: "أدوات وتطبيقات الذكاء الاصطناعي",
+    link: "https://www.funfun.tools/ar",
+    icon: '<i class="bi bi-cpu"></i>'  // AI / technology
+  },
+  {
+    id: 5,
+    name: "أدوات PDF",
+    link: "https://www.ilovepdf.com/",
+    icon: '<i class="bi bi-file-earmark-pdf"></i>'  // PDF file icon
+  },
+  {
+    id: 6,
+    name: "الأدلة الارشادية للمعلم",
+    link: "",
+    icon: '<i class="bi bi-clipboard-check"></i>'  // guide/checklist
+  }
+]
