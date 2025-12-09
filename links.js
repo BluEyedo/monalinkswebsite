@@ -273,7 +273,8 @@ const links3 = [
   {
     id: 14,
     name: "خطة برامج وخدمات التوجيه الطلابي الفصل الدراسي الأول",
-    link: "https://drive.google.com/file/d/1BNrzJ4mNuw4gumB0wN1o5Ih9vMNRcWrM/view",
+    // link: "https://drive.google.com/file/d/1BNrzJ4mNuw4gumB0wN1o5Ih9vMNRcWrM/view",
+    link:"/daleel-ijra'ee.pdf",
     icon: '<i class="bi bi-calendar2-week"></i>',
   },
   {
