@@ -226,7 +226,7 @@ const links3 = [
     },
     {
         id: 14,
-        name: "خطة برامج وخدمات التوجيه الطلابي الفصل الدراسي الأول",
+        name: "الدليل الإجرائي",
         link: "https://drive.google.com/file/d/1BNrzJ4mNuw4gumB0wN1o5Ih9vMNRcWrM/view",
         icon: '<i class="bi bi-calendar2-week"></i>'
     },
