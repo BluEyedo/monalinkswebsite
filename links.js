@@ -377,10 +377,10 @@ const links4 = [
         link: "https://www.ilovepdf.com/",
         icon: '<i class="bi bi-file-earmark-pdf"></i>'  // PDF file icon
     },
-    // {
-    //   id: 6,
-    //   name: "الأدلة الارشادية للمعلم",
-    //   link: "",
-    //   icon: '<i class="bi bi-clipboard-check"></i>'  // guide/checklist
-    // }
+    {
+        id: 6,
+        name: "مدونة نافس",
+        link: "https://naffisweb.blogspot.com/?m=1",
+        icon: '<i class="bi bi-clipboard-check"></i>'  // guide/checklist
+    }
 ]
