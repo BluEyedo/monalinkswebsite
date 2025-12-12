@@ -272,7 +272,7 @@ const links3 = [
     },
     {
         id: 14,
-        name: "الدليل الإجرائي",
+        name: "االدليل الإجرائي لتنفيذ البرنامج الإرشادي للمعلمين",
         link: "daleel-ijra'ee.pdf",
         icon: '<i class="bi bi-calendar2-week"></i>'
     },
