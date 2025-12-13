@@ -56,7 +56,7 @@ const links1 = [
     {
         id: 10,
         name: "البريد الإلكتروني الوزاري",
-        link: "https://login.microsoftonline.com/",
+        link: "https://sts.moe.gov.sa/adfs/ls?wa=wsignin1.0&wtrealm=https%3a%2f%2fwebmail.moe.gov.sa%2fowa%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fowa%252f&wct=2025-12-12T18%3a35%3a05Z",
         icon: '<i class="bi bi-envelope-at"></i>', // بريد إلكتروني
     },
 ];
@@ -177,19 +177,6 @@ const links2 = [
         icon: '<i class="bi bi-layers"></i>', // برامج تعليمية
     },
 ];
-
-// اكاديمية خان
-// https://ar.khanacademy.org/
-// ايديكس edX
-// https://www.edx.org/
-// يوداسيتي U  UDASITU
-// https://www.udacity.com/
-// أليسون Alison
-// https://alison.com/
-// سكيلشر Skilshare
-// https://www.skillshare.com/en/
-// فيوتشر ليرن
-// https://www.futurelearn.com/
 
 const links3 = [
     {
@@ -344,8 +331,6 @@ const links3 = [
     }
 ];
 
-
-
 const links4 = [
     {
         id: 1,
@@ -384,3 +369,54 @@ const links4 = [
         icon: '<i class="bi bi-clipboard-check"></i>'  // guide/checklist
     }
 ]
+
+const links5 = [
+    {
+        id: 1,
+        name: "النماذج التعليمية",
+        link: "https://edu-forms.com/shawahed",
+        icon: '<i class="bi bi-ui-checks"></i>'  // forms / templates
+    },
+    {
+        id: 2,
+        name: "لوحة الموظف التفاعلية",
+        link: "https://script.google.com/macros/s/AKfycbyt4l52INsfpKMOPQefyqlZLDaysdIwOUXAeAgUWwVqkISsr9seXpMA1EFi0IoJvpJN0A/exec",
+        icon: '<i class="bi bi-display"></i>'   // dashboard screen
+    },
+    {
+        id: 3,
+        name: "تصميم المواقع الالكترونية",
+        link: "https://ar.site123.com/",
+        icon: '<i class="bi bi-globe2"></i>'     // web design / internet
+    },
+    {
+        id: 4,
+        name: "تحليل اختبار نافس التفاعلي",
+        link: "https://docs.google.com/spreadsheets/d/1jh5EvwuuJ-77L6SOm8c6EHihedZzNPGS/edit?usp=drivesdk&ouid=112889616095108011458&rtpof=true&sd=true",
+        icon: '<i class="bi bi-bar-chart-line"></i>'  // data analysis
+    },
+    {
+        id: 5,
+        name: "بطاقة مقارنة متغيرات التقويم",
+        link: "https://docs.google.com/spreadsheets/d/1svHofdEeDU4UpnpPhqgivG3f9I19BaXZ/edit?usp=drivesdk&ouid=112889616095108011458&rtpof=true&sd=true",
+        icon: '<i class="bi bi-layers"></i>'      // comparison / layers
+    },
+    {
+        id: 6,
+        name: "الرخصة المهنية التفاعلية",
+        link: "https://docs.google.com/spreadsheets/d/1eHCzJoqnxZVF5gz2ZI_F2jtv9QNU_2uI/edit?usp=drivesdk&ouid=112889616095108011458&rtpof=true&sd=true",
+        icon: '<i class="bi bi-patch-check"></i>'  // certification / license
+    },
+    {
+        id: 7,
+        name: "ملف الجوهرة التفاعلي",
+        link: "https://docs.google.com/spreadsheets/d/1ch5Xpf4zLXBa_k-SEHqs5P0FF0aoNrRp/edit?usp=drivesdk&ouid=112889616095108011458&rtpof=true&sd=true",
+        icon: '<i class="bi bi-gem"></i>'          // diamond / jewel
+    },
+    {
+        id: 8,
+        name: "تقرير الاستعداد التفاعلي",
+        link: "https://docs.google.com/spreadsheets/d/16t2TJh7rajn-xu6y3qCK3DwQabXCbqpk/edit?usp=drivesdk&ouid=112889616095108011458&rtpof=true&sd=true",
+        icon: '<i class="bi bi-file-earmark-bar-graph"></i>'  // report / readiness
+    }
+];

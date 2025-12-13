@@ -1,186 +1,218 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>البوابة الرقمية</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" media="screen" href="page.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <script src="links.js"></script>
-        <link rel="icon" href="favicon.ico" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-    </head>
 
-    <body>
-        <style>
-            body {
-                background-color: #ffffff;
-                color: white;
-                min-height: 100vh;
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>البوابة الرقمية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="page.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="links.js"></script>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .cairo-font {
+            font-family: "Cairo", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings: "slnt" 0;
+        }
+
+        @keyframes glow-pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
             }
 
-            .cairo-font {
-                font-family: "Cairo", sans-serif;
-                font-optical-sizing: auto;
-                font-style: normal;
-                font-variation-settings: "slnt" 0;
+            50% {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        @keyframes glow-pulse-white {
+
+            0%,
+            100% {
+                box-shadow: 0 1px 20px rgba(255, 255, 255, 0.3);
             }
 
-            @keyframes glow-pulse {
-                0%,
-                100% {
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-                }
+            50% {
+                box-shadow: 0 1px 20px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.2);
+            }
+        }
 
-                50% {
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 255, 255, 0.1);
-                }
+        @keyframes glow-pulse-orange {
+
+            0%,
+            100% {
+                box-shadow: 0 1px 20px rgb(249, 115, 22, 0.3);
             }
 
-            @keyframes glow-pulse-white {
-                0%,
-                100% {
-                    box-shadow: 0 1px 20px rgba(255, 255, 255, 0.3);
-                }
+            50% {
+                box-shadow: 0 1px 20px rgb(249, 115, 22, 0.8), 0 0 5px rgba(255, 255, 255, 0.2);
+            }
+        }
 
-                50% {
-                    box-shadow: 0 1px 20px rgba(255, 255, 255, 0.5), 0 0 5px rgba(255, 255, 255, 0.2);
-                }
+        @keyframes glow-pulse-yellow {
+
+            0%,
+            100% {
+                box-shadow: 0 1px 20px rgb(253, 224, 71, 0.3);
             }
 
-            @keyframes glow-pulse-orange {
-                0%,
-                100% {
-                    box-shadow: 0 1px 20px rgb(249, 115, 22, 0.3);
-                }
+            50% {
+                box-shadow: 0 1px 20px rgb(253, 224, 71, 0.8), 0 0 5px rgba(255, 255, 255, 0.2);
+            }
+        }
 
-                50% {
-                    box-shadow: 0 1px 20px rgb(249, 115, 22, 0.8), 0 0 5px rgba(255, 255, 255, 0.2);
-                }
+        @keyframes glow-pulse-blue {
+
+            0%,
+            100% {
+                box-shadow: 0 1px 20px rgb(59, 130, 246, 0.3);
             }
 
-            @keyframes glow-pulse-yellow {
-                0%,
-                100% {
-                    box-shadow: 0 1px 20px rgb(253, 224, 71, 0.3);
-                }
+            50% {
+                box-shadow: 0 1px 20px rgb(59, 130, 246, 0.8), 0 0 5px rgba(255, 255, 255, 0.2);
+            }
+        }
 
-                50% {
-                    box-shadow: 0 1px 20px rgb(253, 224, 71, 0.8), 0 0 5px rgba(255, 255, 255, 0.2);
-                }
+        @keyframes glow-pulse-purple {
+
+            0%,
+            100% {
+                box-shadow: 0 1px 20px rgb(173, 70, 255, 0.3);
             }
 
-            @keyframes glow-pulse-blue {
-                0%,
-                100% {
-                    box-shadow: 0 1px 20px rgb(59, 130, 246, 0.3);
-                }
-
-                50% {
-                    box-shadow: 0 1px 20px rgb(59, 130, 246, 0.8), 0 0 5px rgba(255, 255, 255, 0.2);
-                }
+            50% {
+                box-shadow: 0 1px 20px rgb(173, 70, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.2);
             }
+        }
 
-            .super-button {
-                animation: glow-pulse 3s ease-in-out infinite;
-            }
+        .super-button {
+            animation: glow-pulse 3s ease-in-out infinite;
+        }
 
-            .content-container {
-                animation: glow-pulse 3s ease-in-out infinite;
-            }
+        .content-container {
+            animation: glow-pulse 3s ease-in-out infinite;
+        }
 
-            .link-card {
-                animation: glow-pulse-white 3s ease-in-out infinite;
-            }
+        .link-card {
+            animation: glow-pulse-white 3s ease-in-out infinite;
+        }
 
-            .link-card-orange {
-                animation: glow-pulse-orange 3s ease-in-out infinite;
-            }
+        .link-card-orange {
+            animation: glow-pulse-orange 3s ease-in-out infinite;
+        }
 
-            .link-card-yellow {
-                animation: glow-pulse-yellow 3s ease-in-out infinite;
-            }
+        .link-card-yellow {
+            animation: glow-pulse-yellow 3s ease-in-out infinite;
+        }
 
-            .link-card-blue {
-                animation: glow-pulse-blue 3s ease-in-out infinite;
-            }
+        .link-card-blue {
+            animation: glow-pulse-blue 3s ease-in-out infinite;
+        }
 
-            .link-card:hover {
-                animation: none;
-            }
-        </style>
+        .link-card-purple {
+            animation: glow-pulse-blue 3s ease-in-out infinite;
+        }
 
-        <div class="cairo-font px-4 sm:px-6 lg:px-8">
+        .link-card:hover {
+            animation: none;
+        }
+    </style>
 
-            <div class="border-1 rounded-lg border-green-700 hover:bg-green-700 text-center">อัปโหลดรูปภาพน้ำท่วม</div>
-            <div class="flex flex-row justify-center">
-                <div
-                    class="super-button bg-gradient-to-tr from-slate-800 to-slate-700 tilt-3d flex flex-row justify-center mt-8 sm:mt-12 lg:mt-16 !border-t-white !border-t-4 sm:!border-t-8 border-gray-700 border w-full sm:w-[80vw] md:w-[70vw] lg:w-[50vw] xl:w-[40vw] rounded-2xl p-4 sm:p-6"
-                >
-                    <div class="flex flex-col gap-3 sm:gap-5 px-2 sm:px-5 items-center">
-                        <p class="text-3xl sm:text-5xl lg:text-7xl font-bold text-center">البوابة الرقمية</p>
-                        <p class="text-lg sm:text-2xl lg:text-3xl text-center">مقدم خدمات دعم التميز المدرسي</p>
-                        <p class="text-base sm:text-xl lg:text-2xl text-center">أ.منى غالي الصاعدي</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-col items-center mt-10 sm:mt-16 lg:mt-20 mb-8 sm:mb-12 gap-12">
-                <div
-                    class="content-container bg-gradient-to-tr from-slate-800 to-slate-700 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] [direction:rtl] p-4 sm:p-5 rounded-xl border-t-8 border-t-orange-500 border border-gray-700"
-                >
-                    <p class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b border-b-orange-400 p-4 sm:p-6">
-                        <span> الأنظمة التعليمية </span>
-                    </p>
-
-                    <div id="links-container-1" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-12 mt-4 sm:mt-6">
-                        <!-- Links will be inserted here -->
-                    </div>
-                </div>
-
-                <div
-                    class="content-container bg-gradient-to-tr from-slate-800 to-slate-700 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] [direction:rtl] p-4 sm:p-5 rounded-xl border-t-8 border-t-white border border-gray-700"
-                >
-                    <p class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b p-4 sm:p-6">
-                        <span> الأدلة المعتمدة للعام الدراسي 1447هـ </span>
-                    </p>
-
-                    <div id="links-container-3" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-12 mt-4 sm:mt-6"></div>
-                </div>
-
-                <div
-                    class="content-container bg-gradient-to-tr from-slate-800 to-slate-700 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] [direction:rtl] p-4 sm:p-5 rounded-xl border-t-8 border-t-blue-500 border border-gray-700"
-                >
-                    <p class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b border-b-blue-400 p-4 sm:p-6">
-                        <span> المنصات التدريبية </span>
-                    </p>
-
-                    <div id="links-container-2" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-12 mt-4 sm:mt-6"></div>
-                </div>
-
-                <div
-                    class="content-container bg-gradient-to-tr from-slate-800 to-slate-700 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] [direction:rtl] p-4 sm:p-5 rounded-xl border-t-8 border-t-yellow-300 border border-gray-700"
-                >
-                    <p class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b border-b-yellow-400 p-4 sm:p-6">
-                        <span> أدلة المعلم </span>
-                    </p>
-
-                    <div id="links-container-4" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-12 mt-4 sm:mt-6"></div>
+    <div class="cairo-font px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-row justify-center">
+            <div
+                class="super-button bg-gradient-to-tr from-slate-800 to-slate-700 tilt-3d flex flex-row justify-center mt-8 sm:mt-12 lg:mt-16 !border-t-white !border-t-4 sm:!border-t-8 border-gray-700 border w-full sm:w-[80vw] md:w-[70vw] lg:w-[50vw] xl:w-[40vw] rounded-2xl p-4 sm:p-6">
+                <div class="flex flex-col gap-3 sm:gap-5 px-2 sm:px-5 items-center">
+                    <p class="text-3xl sm:text-5xl lg:text-7xl font-bold text-center">البوابة الرقمية</p>
+                    <p class="text-lg sm:text-2xl lg:text-3xl text-center">مقدم خدمات دعم التميز المدرسي</p>
+                    <p class="text-base sm:text-xl lg:text-2xl text-center">أ.منى غالي الصاعدي</p>
                 </div>
             </div>
         </div>
 
-        <script>
-            // Sample links data - replace with your actual links.js data
-            document.addEventListener("DOMContentLoaded", () => {
-                const linkContainer1 = document.getElementById("links-container-1");
-                links1.forEach((item) => {
-                    const linkElement = document.createElement("a");
-                    linkElement.href = item.link;
-                    linkElement.target = "_blank";
-                    linkElement.innerHTML = `
+        <div class="flex flex-col items-center mt-10 sm:mt-16 lg:mt-20 mb-8 sm:mb-12 gap-12">
+            <div
+                class="content-container bg-gradient-to-tr from-slate-800 to-slate-700 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] [direction:rtl] p-4 sm:p-5 rounded-xl border-t-8 border-t-orange-500 border border-gray-700">
+                <p
+                    class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b border-b-orange-400 p-4 sm:p-6">
+                    <span> الأنظمة التعليمية </span>
+                </p>
+
+                <div id="links-container-1"
+                    class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-12 mt-4 sm:mt-6">
+                    <!-- Links will be inserted here -->
+                </div>
+            </div>
+
+            <div
+                class="content-container bg-gradient-to-tr from-slate-800 to-slate-700 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] [direction:rtl] p-4 sm:p-5 rounded-xl border-t-8 border-t-white border border-gray-700">
+                <p class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b p-4 sm:p-6">
+                    <span> الأدلة المعتمدة للعام الدراسي 1447هـ </span>
+                </p>
+
+                <div id="links-container-3"
+                    class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-12 mt-4 sm:mt-6"></div>
+            </div>
+
+            <div
+                class="content-container bg-gradient-to-tr from-slate-800 to-slate-700 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] [direction:rtl] p-4 sm:p-5 rounded-xl border-t-8 border-t-blue-500 border border-gray-700">
+                <p class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b border-b-blue-400 p-4 sm:p-6">
+                    <span> المنصات التدريبية </span>
+                </p>
+
+                <div id="links-container-2"
+                    class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-12 mt-4 sm:mt-6"></div>
+            </div>
+
+            <div
+                class="content-container bg-gradient-to-tr from-slate-800 to-slate-700 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] [direction:rtl] p-4 sm:p-5 rounded-xl border-t-8 border-t-yellow-300 border border-gray-700">
+                <p
+                    class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b border-b-yellow-400 p-4 sm:p-6">
+                    <span> أدلة المعلم </span>
+                </p>
+
+                <div id="links-container-4"
+                    class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-12 mt-4 sm:mt-6"></div>
+            </div>
+
+            <div
+                class="content-container bg-gradient-to-tr from-slate-800 to-slate-700 w-full sm:w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[70vw] [direction:rtl] p-4 sm:p-5 rounded-xl border-t-8 border-t-purple-500 border border-gray-700">
+                <p
+                    class="text-center text-xl sm:text-2xl lg:text-3xl font-bold border-b border-b-purple-500 p-4 sm:p-6">
+                    <span> نماذج تفاعلية استرشادية </span>
+                </p>
+
+                <div id="links-container-5"
+                    class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-12 mt-4 sm:mt-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample links data - replace with your actual links.js data
+        document.addEventListener("DOMContentLoaded", () => {
+            const linkContainer1 = document.getElementById("links-container-1");
+            links1.forEach((item) => {
+                const linkElement = document.createElement("a");
+                linkElement.href = item.link;
+                linkElement.target = "_blank";
+                linkElement.innerHTML = `
                     <div class="link-card-orange border border-orange-500 text-base text-xs sm:text-xl lg:text-2xl text-center 
                         p-3 sm:p-4 rounded-lg items-center  min-h-[100px]  max-h-[120px]
                         duration-300 hover:bg-orange-500 hover:text-black cursor-pointer
@@ -189,15 +221,15 @@
                         ${item.name}
                     </div>
                 `;
-                    linkContainer1.appendChild(linkElement);
-                });
+                linkContainer1.appendChild(linkElement);
+            });
 
-                const linkContainer2 = document.getElementById("links-container-2");
-                links2.forEach((item) => {
-                    const linkElement = document.createElement("a");
-                    linkElement.href = item.link;
-                    linkElement.target = "_blank";
-                    linkElement.innerHTML = `
+            const linkContainer2 = document.getElementById("links-container-2");
+            links2.forEach((item) => {
+                const linkElement = document.createElement("a");
+                linkElement.href = item.link;
+                linkElement.target = "_blank";
+                linkElement.innerHTML = `
                     <div class="link-card-blue border border-blue-500 text-base text-xs sm:text-xl lg:text-2xl text-center 
                         p-3 sm:p-4 rounded-lg items-center 
                         duration-300 hover:bg-blue-500 hover:text-black cursor-pointer
@@ -206,15 +238,15 @@
                         ${item.name}
                     </div>
                 `;
-                    linkContainer2.appendChild(linkElement);
-                });
+                linkContainer2.appendChild(linkElement);
+            });
 
-                const linkContainer3 = document.getElementById("links-container-3");
-                links3.forEach((item) => {
-                    const linkElement = document.createElement("a");
-                    linkElement.href = item.link;
-                    linkElement.target = "_blank";
-                    linkElement.innerHTML = `
+            const linkContainer3 = document.getElementById("links-container-3");
+            links3.forEach((item) => {
+                const linkElement = document.createElement("a");
+                linkElement.href = item.link;
+                linkElement.target = "_blank";
+                linkElement.innerHTML = `
                     <div class="link-card border border-white text-base text-xs sm:text-xl lg:text-2xl text-center 
                         p-3 sm:p-4 rounded-lg items-center min-h-[120px]  max-h-[190px]
                         duration-300 hover:bg-white hover:text-black cursor-pointer
@@ -223,15 +255,15 @@
                         ${item.name}
                     </div>
                 `;
-                    linkContainer3.appendChild(linkElement);
-                });
+                linkContainer3.appendChild(linkElement);
+            });
 
-                const linkContainer4 = document.getElementById("links-container-4");
-                links4.forEach((item) => {
-                    const linkElement = document.createElement("a");
-                    linkElement.href = item.link;
-                    linkElement.target = "_blank";
-                    linkElement.innerHTML = `
+            const linkContainer4 = document.getElementById("links-container-4");
+            links4.forEach((item) => {
+                const linkElement = document.createElement("a");
+                linkElement.href = item.link;
+                linkElement.target = "_blank";
+                linkElement.innerHTML = `
                     <div class="link-card-yellow border border-yellow-300 text-base text-xs sm:text-xl lg:text-2xl text-center 
                         p-3 sm:p-4 rounded-lg items-center min-h-[120px]  max-h-[190px]
                         duration-300 hover:bg-yellow-300 hover:text-black cursor-pointer
@@ -240,34 +272,53 @@
                         ${item.name}
                     </div>
                 `;
-                    linkContainer4.appendChild(linkElement);
-                });
-
-                document.querySelectorAll(".tilt-3d").forEach((card) => {
-                    let strength = 8; // Tilt intensity (lower = more subtle)
-
-                    const handleMouseMove = (e) => {
-                        const rect = card.getBoundingClientRect();
-                        const centerX = rect.left + rect.width / 2;
-                        const centerY = rect.top + rect.height / 2;
-
-                        const mouseX = e.clientX - centerX;
-                        const mouseY = e.clientY - centerY;
-
-                        const rotateY = (mouseX / rect.width) * strength;
-                        const rotateX = -(mouseY / rect.height) * strength;
-
-                        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
-                    };
-
-                    const handleMouseLeave = () => {
-                        card.style.transform = "perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)";
-                    };
-
-                    card.addEventListener("mousemove", handleMouseMove);
-                    card.addEventListener("mouseleave", handleMouseLeave);
-                });
+                linkContainer4.appendChild(linkElement);
             });
-        </script>
-    </body>
+
+
+            const linkContainer5 = document.getElementById("links-container-5");
+            links5.forEach((item) => {
+                const linkElement = document.createElement("a");
+                linkElement.href = item.link;
+                linkElement.target = "_blank";
+                linkElement.innerHTML = `
+                    <div class="link-card-purple border border-purple-500 text-base text-xs sm:text-xl lg:text-2xl text-center 
+                        p-3 sm:p-4 rounded-lg items-center min-h-[120px]  max-h-[190px]
+                        duration-300 hover:bg-purple-500 cursor-pointer
+                        transition-all flex flex-row gap-6 justify-between">
+                        ${item.icon}
+                        ${item.name}
+                    </div>
+                `;
+                linkContainer5.appendChild(linkElement);
+            });
+
+            document.querySelectorAll(".tilt-3d").forEach((card) => {
+                let strength = 8; // Tilt intensity (lower = more subtle)
+
+                const handleMouseMove = (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const centerX = rect.left + rect.width / 2;
+                    const centerY = rect.top + rect.height / 2;
+
+                    const mouseX = e.clientX - centerX;
+                    const mouseY = e.clientY - centerY;
+
+                    const rotateY = (mouseX / rect.width) * strength;
+                    const rotateX = -(mouseY / rect.height) * strength;
+
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+                };
+
+                const handleMouseLeave = () => {
+                    card.style.transform = "perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)";
+                };
+
+                card.addEventListener("mousemove", handleMouseMove);
+                card.addEventListener("mouseleave", handleMouseLeave);
+            });
+        });
+    </script>
+</body>
+
 </html>
