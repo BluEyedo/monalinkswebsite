@@ -418,5 +418,23 @@ const links5 = [
         name: "تقرير الاستعداد التفاعلي",
         link: "https://docs.google.com/spreadsheets/d/16t2TJh7rajn-xu6y3qCK3DwQabXCbqpk/edit?usp=drivesdk&ouid=112889616095108011458&rtpof=true&sd=true",
         icon: '<i class="bi bi-file-earmark-bar-graph"></i>'  // report / readiness
+    },
+    {
+        id: 9,
+        name: "تحليل درجات مواد تقويم مستمر",
+        link: "https://docs.google.com/spreadsheets/d/1_U83l2hWlQbivMAHNFKP02c44BVJ9MXQ/edit?usp=drivesdk&ouid=112889616095108011458&rtpof=true&sd=true",
+        icon: '<i class="bi bi-graph-up"></i>' // grade analysis
+    },
+    {
+        id: 10,
+        name: "تحليل درجات موادي يشملها اختبار نهائي",
+        link: "https://docs.google.com/spreadsheets/d/1BKj-NsuGqxkuRLbacQOcbKvF-Ac6gKGB/edit?usp=drivesdk&ouid=112889616095108011458&rtpof=true&sd=true",
+        icon: '<i class="bi bi-graph-up-arrow"></i>' // exam + grade analysis
+    },
+    {
+        id: 11,
+        name: "رابط تقرير نشاط",
+        link: "https://oneopen7.com/design",
+        icon: '<i class="bi bi-file-earmark-text"></i>' // activity report
     }
 ];
